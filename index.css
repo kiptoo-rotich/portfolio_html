@@ -24,7 +24,7 @@
     padding-right: 20px;
 }
 
-#navigation_bar>li:first-child{
+#navigation_bar>li:first-child {
     padding-right: 5vw;
 }
 
@@ -70,7 +70,8 @@ body {
     font-weight: 700;
     text-decoration: underline;
     margin-left: 54vw;
-    margin-top: 60px;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
 }
 
 .project_container {
@@ -124,4 +125,3 @@ body {
 .project_container>div>ol>li {
     list-style: lower-roman;
 }
-
