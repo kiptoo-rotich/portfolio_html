@@ -4,7 +4,7 @@
 
 #navigation_bar {
     width: 100%;
-    background-color: rgb(112, 197, 223);
+    background-color: rgba(1, 156, 1, 0.603);
     position: fixed;
     top: 0px;
     text-decoration: none;
@@ -41,9 +41,9 @@ body {
 }
 
 .details_container {
-    height: 93vh;
-    background-color: rgb(112, 197, 223);
-    width: 40vh;
+    height: 83vh;
+    background-color: rgba(1, 156, 1, 0.603);
+    width: 35vh;
     float: left;
     box-sizing: border-box;
     box-shadow: 0px 0px 10px 0px;
@@ -51,7 +51,13 @@ body {
     overflow-y: scroll;
     margin-top: 0vh;
     position: fixed;
+    padding-bottom: 10vh;
 }
+
+.details_container>img{
+    height: 19vh;
+}
+
 
 .details_container>h4 {
     padding: 13px;
@@ -77,13 +83,21 @@ body {
 .project_container {
     width: 70vh;
     height: 70vh;
-    background-color: rgb(112, 197, 223);
+    background-color: white;
     margin: 20px;
     float: right;
+    border: 1px solid lightgrey;
     box-sizing: border-box;
     overflow-y: auto;
-    box-shadow: 0px 0px 10px 0px;
+    box-shadow: 10px 10px 5px 0px rgb(240, 240, 240);
     margin: 15px;
+    margin-bottom: 10vh;
+}
+
+.project_container:hover {
+    background-color: rgb(235, 235, 235);
+    height: 72vh;
+    width: 72vh;
 }
 
 .project_container>div {
@@ -112,6 +126,13 @@ body {
     text-align: center;
     text-decoration: underline;
     text-transform: uppercase;
+    color: rgba(1, 156, 1, 0.603);
+}
+
+.project_container>h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .project_container>div>ul, ol {
@@ -124,4 +145,24 @@ body {
 
 .project_container>div>ol>li {
     list-style: lower-roman;
+}
+
+#footer {
+    width: 100%;
+    background-color: rgba(1, 156, 1, 0.603);
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+}
+
+.contact {
+    width: 10vw;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.person {
+    margin: 10px;
 }
