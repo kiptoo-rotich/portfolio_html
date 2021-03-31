@@ -37,6 +37,7 @@
 }
 
 body {
+    background-color: rgb(235, 235, 235);
     margin: 25px;
 }
 
@@ -54,10 +55,9 @@ body {
     padding-bottom: 10vh;
 }
 
-.details_container>img{
+.details_container>img {
     height: 19vh;
 }
-
 
 .details_container>h4 {
     padding: 13px;
@@ -86,24 +86,25 @@ body {
     background-color: white;
     margin: 20px;
     float: right;
-    border: 1px solid lightgrey;
+    border: 1px solid rgba(1, 156, 1, 0.603);
     box-sizing: border-box;
     overflow-y: auto;
-    box-shadow: 10px 10px 5px 0px rgb(240, 240, 240);
+    box-shadow: 10px 10px 5px 0px rgba(96, 136, 96, 0.555);
     margin: 15px;
     margin-bottom: 10vh;
+    float: right;
 }
 
 .project_container:hover {
-    background-color: rgb(235, 235, 235);
-    height: 72vh;
-    width: 72vh;
+    background-color: white;
+    height: 71vh;
+    width: 71vh;
 }
 
 .project_container>div {
     columns: 2;
     padding: 20px;
-    column-rule: 1px solid grey;
+    column-rule: 1px solid rgba(1, 156, 1, 0.603);
 }
 
 .project_container>img {
@@ -165,4 +166,53 @@ body {
 
 .person {
     margin: 10px;
+}
+
+@media screen and (max-width: 680px) {
+    body {
+        overflow-x: unset;
+    }
+    .details_container {
+        position: relative;
+        width: 80vw;
+        margin-left: 5%;
+        overflow-y: unset;
+        height: auto;
+    }
+    #navigation_bar {
+        width: 90%;
+        background-color: rgba(1, 156, 1, 0.603);
+        position: fixed;
+        top: 0px;
+        text-decoration: none;
+        padding-right: 30px;
+        border-bottom: 2px solid white;
+    }
+    #navigation_bar>li>a {
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .details_container>img {
+        height: 15vh;
+        width: 48vw;
+    }
+    .header {
+        text-align: left;
+    }
+    .project_container {
+        width: 80vw;
+        height: auto;
+        overflow-y: unset;
+    }
+    .project_container>p, .project_container>div>p, ul>li, ol>li {
+        font-size: 16px;
+    }
+    .project_container>img {
+        height: 18vh;
+        width: 35vw;
+    }
+    .project_container:hover {
+        background-color: white;
+        width: 81vw;
+    }
 }
