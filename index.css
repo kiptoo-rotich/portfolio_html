@@ -4,7 +4,7 @@
 
 #navigation_bar {
     width: 100%;
-    background-color: rgba(1, 156, 1, 0.603);
+    background-color: rgb(25, 186, 192);
     position: fixed;
     top: 0px;
     text-decoration: none;
@@ -43,7 +43,7 @@ body {
 
 .details_container {
     height: 83vh;
-    background-color: rgba(1, 156, 1, 0.603);
+    background-color: rgba(25, 186, 192, 0.829);
     width: 35vh;
     float: left;
     box-sizing: border-box;
@@ -52,7 +52,7 @@ body {
     overflow-y: scroll;
     margin-top: 0vh;
     position: fixed;
-    padding-bottom: 10vh;
+    padding-bottom: 4vh;
 }
 
 .details_container>img {
@@ -86,7 +86,7 @@ body {
     background-color: white;
     margin: 20px;
     float: right;
-    border: 1px solid rgba(1, 156, 1, 0.603);
+    border: 1px solid rgba(25, 186, 192, 0.829);
     box-sizing: border-box;
     overflow-y: auto;
     box-shadow: 10px 10px 5px 0px rgba(96, 136, 96, 0.555);
@@ -104,7 +104,7 @@ body {
 .project_container>div {
     columns: 2;
     padding: 20px;
-    column-rule: 1px solid rgba(1, 156, 1, 0.603);
+    column-rule: 1px solid rgba(25, 186, 192, 0.829);
 }
 
 .project_container>img {
@@ -127,7 +127,7 @@ body {
     text-align: center;
     text-decoration: underline;
     text-transform: uppercase;
-    color: rgba(1, 156, 1, 0.603);
+    color: rgba(25, 186, 192, 0.829);
 }
 
 .project_container>h4 {
@@ -150,10 +150,24 @@ body {
 
 #footer {
     width: 100%;
-    background-color: rgba(1, 156, 1, 0.603);
+    background-color: rgb(25, 186, 192);
     position: fixed;
     bottom: 0px;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer>p{
+    padding-left: 5px;
+}
+
+#footer>img {
+    height: 40px;
+    width: 40px;
+    padding-left: 5px;
 }
 
 .contact {
@@ -181,7 +195,7 @@ body {
     }
     #navigation_bar {
         width: 90%;
-        background-color: rgba(1, 156, 1, 0.603);
+        background-color: rgba(25, 186, 192, 0.829);
         position: fixed;
         top: 0px;
         text-decoration: none;
