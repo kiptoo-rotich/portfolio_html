@@ -15,25 +15,42 @@
         <li><a href="index.html">Home</a></li>
     </div>
 
+    <h2>Your feedback is valued</h2>
     <div>
-        <h2>Feedback</h2>
         <div class="contact">
-            <label class="person">
-                <input type="radio" checked="checked" name="radio">Person
-                <span class="checkmark"></span>
-            </label>
+            <div class="radio_button">
 
-            <label class="company">
-                <input type="radio" name="radio">Company
-                <span class="checkmark"></span>
-            </label>
+                <div>
+                    <input type="radio" checked="checked" name="radio">Person
+                    <span class="checkmark"></span>
+                </div>
 
-            <input type="text" name="name" id="name" placeholder="John Doe">
+                <div>
+                    <input type="radio" name="radio">Company
+                    <span class="checkmark"></span>
+                </div>
 
-            <input type="email" name="email" id="email" placeholder="johndoe@gmail.com">
+            </div>
 
+            <label for="name">Full name:</label>
+            <input type="text" name="name" id="name" placeholder="Full name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+
+            <textarea name="Message" id="message" cols="30" rows="10" placeholder="My message is....."></textarea>
+            <button type="submit">SEND</button>
         </div>
+
     </div>
+
+    <h5>Contacts</h5>
+    <div class="social_images">
+        <img src="Image/facebook.jpg" alt="facebook">
+        <img src="Image/Insta.jpg" alt="Instagram">
+        <img src="Image/twitter.png" alt="Twitter">
+    </div>
+
     <div id="footer">
         <img src="Image/facebook.jpg" alt="facebook">
         <img src="Image/Insta.jpg" alt="Instagram">
