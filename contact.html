@@ -15,21 +15,16 @@
         <li><a href="index.html">Home</a></li>
     </div>
 
-    <h2>Your feedback is valued</h2>
-    <div>
+    <h2 class="contact_header">Your feedback is valued</h2>
+    <div class="feedback-container">
         <div class="contact">
             <div class="radio_button">
 
-                <div>
-                    <input type="radio" checked="checked" name="radio">Person
-                    <span class="checkmark"></span>
-                </div>
+                <input type="radio" class="radio" name="radio" value="Personal">
+                <label for="person">Person</label><br>
 
-                <div>
-                    <input type="radio" name="radio">Company
-                    <span class="checkmark"></span>
-                </div>
-
+                <input type="radio" class="radio" name="radio" value="Company">
+                <label for="company">Company</label>
             </div>
 
             <label for="name">Full name:</label>
@@ -39,7 +34,7 @@
             <input type="email" name="email" id="email" placeholder="Email" required>
 
             <textarea name="Message" id="message" cols="30" rows="10" placeholder="My message is....."></textarea>
-            <button type="submit">SEND</button>
+            <button type="submit" onclick="feedback()">SEND</button>
         </div>
 
     </div>
@@ -52,11 +47,9 @@
     </div>
 
     <div id="footer">
-        <img src="Image/facebook.jpg" alt="facebook">
-        <img src="Image/Insta.jpg" alt="Instagram">
-        <img src="Image/twitter.png" alt="Twitter">
         <p>@valour solutions 2021</p>
     </div>
+    <script src="contact.js"></script>
 </body>
 
 </html>
