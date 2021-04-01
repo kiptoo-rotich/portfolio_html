@@ -2,6 +2,14 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+h2 {
+    margin-top: 15vh;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 #navigation_bar {
     width: 100%;
     background-color: rgb(25, 186, 192);
@@ -160,7 +168,7 @@ body {
     align-items: center;
 }
 
-#footer>p{
+#footer>p {
     padding-left: 5px;
 }
 
@@ -171,15 +179,94 @@ body {
 }
 
 .contact {
-    width: 10vw;
+    width: 30%;
+    padding: 10px;
+    border: 1px solid green;
     margin: auto;
-    padding: 20px;
+    font-size: 19px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px;
+}
+
+.contact>label {
+    font: 19px;
+}
+
+.contact>input {
+    width: 90%;
+    margin: 10px;
+    height: 20px;
+    border-radius: 4px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.contact>button {
+    background-color: blue;
+    border: 0px;
+    width: 30%;
+    border-radius: 20px;
+    float: right;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: white;
+    font-size: 17px;
+}
+
+.contact>button:hover {
+    background-color: white;
+    border: 0px;
+    width: 30%;
+    border-radius: 20px;
+    float: right;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: blue;
+    font-size: 17px;
+}
+
+.contact>textarea {
+    width: 96%;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.radio_button {
     display: flex;
     flex-direction: column;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.radio_button>div {
+    margin-bottom: 10px;
 }
 
 .person {
     margin: 10px;
+}
+
+h5{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.social_images>img {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.social_images {
+    margin-left: 43%;
+    margin-top: 0px;
+    margin-bottom: 4%;
+
 }
 
 @media screen and (max-width: 680px) {
