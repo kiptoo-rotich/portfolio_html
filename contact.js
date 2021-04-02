@@ -7,7 +7,7 @@ function feedback() {
 
     if (name && email && message !== "") {
 
-        alert("Your " + radiobutton.value + " response has been received. Thank you for your feedback. We'll be in touch with you using " + email)
+        alert("Your response has been received. Thank you for your feedback. We'll be in touch with you using " + email)
 
     } else {
         alert("Kindly provide all details.")
