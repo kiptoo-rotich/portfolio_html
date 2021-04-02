@@ -35,7 +35,6 @@ h2 {
     font-family: sans-serif;
     padding: 10px 20px 0px 20px;
     bottom: 0px;
-    position: relative;
     float: right;
     margin-top: 100px;
     margin-right: 10px;
@@ -49,8 +48,8 @@ h2 {
     font-family: sans-serif;
     padding: 10px 20px 0px 20px;
     bottom: 0px;
-    color: white;
-    background-color: darkblue;
+    color: black;
+    background-color: rgb(25, 186, 192);
     position: relative;
     float: right;
     margin-top: 100px;
@@ -257,27 +256,40 @@ h3 {
     padding-left: 5px;
 }
 
+.feedback-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback-container>img {
+    float: left;
+    height: 350px;
+    width: 350px;
+    padding: 50px;
+}
+
 .contact {
     width: 30%;
     padding: 10px;
     border: 1px solid green;
-    margin: auto;
+    border-radius: 10px;
     font-size: 19px;
     background-color: white;
     box-shadow: 0px 0px 10px 0px;
 }
 
-.contact>label {
-    font: 19px;
-}
 
 .contact>input {
     width: 90%;
-    margin: 10px;
+    margin: 20px;
     height: 20px;
-    border-radius: 4px;
+    border-radius: 20px;
     font-size: 18px;
-    padding: 5px;
+    padding: 5px 0px 5px 20px;
+    border: 0px;
+    background-color: lightgray;
 }
 
 .contact>button {
@@ -302,7 +314,7 @@ h3 {
     padding-bottom: 4px;
     color: blue;
     font-size: 17px;
-    border:  0px transparent;
+    border: 0px transparent;
 }
 
 .contact_header {
@@ -310,12 +322,13 @@ h3 {
     color: black;
 }
 
-
 .contact>textarea {
-    width: 96%;
-    border: 1px solid green;
-    border-radius: 5px;
+    width: 90%;
+    border: 0px;
+    border-radius: 10px;
+    background-color: lightgray;
     padding: 10px;
+    margin: 0px 0px 10px 20px;
     font-size: 19px;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -325,7 +338,7 @@ h3 {
     font-size: 17px;
 }
 
-.radio_button, input, label{
+.radio_button, input, label {
     line-height: 30px;
 }
 
