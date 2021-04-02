@@ -36,7 +36,7 @@ h2 {
     padding: 10px 20px 0px 20px;
     bottom: 0px;
     float: right;
-    margin-top: 100px;
+    margin-top: 11vh;
     margin-right: 10px;
     border-radius: 20px 20px 0px 0px;
     background-color: rgb(235, 235, 235);
@@ -396,12 +396,113 @@ h5 {
     body {
         overflow-x: unset;
     }
+    .myimage>h1 {
+        font-size: 30px;
+    }
     .details_container {
         position: relative;
         width: 80vw;
         margin-left: 5%;
         overflow-y: unset;
         height: auto;
+    }
+    #navigation_bar {
+        width: 90%;
+        background-color: rgba(25, 186, 192, 0.829);
+        position: fixed;
+        top: 0px;
+        text-decoration: none;
+        padding-right: 30px;
+        border-bottom: 2px solid white;
+    }
+    #navigation_bar>li>a {
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .details_container>img {
+        height: 15vh;
+        width: 48vw;
+    }
+    .header {
+        text-align: left;
+    }
+    .myimage>p {
+        font-size: 19px;
+        font-style: italic;
+        font-family: sans-serif;
+        padding: 10px 20px 0px 20px;
+        bottom: 0px;
+        float: right;
+        margin-top: 7vh;
+        margin-right: 10px;
+        border-radius: 20px 20px 0px 0px;
+        background-color: rgb(235, 235, 235);
+    }
+    .project_container {
+        width: 80vw;
+        height: auto;
+        overflow-y: unset;
+    }
+    .project_container>p, .project_container>div>p, ul>li, ol>li {
+        font-size: 16px;
+    }
+    .project_container>img {
+        height: 18vh;
+        width: 35vw;
+    }
+    .project_container:hover {
+        background-color: white;
+        width: 81vw;
+    }
+}
+
+@media screen and (min-width: 1580px) and (max-width: 1750px) {
+    .project_container {
+        width: 33%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 780px) and (max-width: 1580px) {
+    .project_container {
+        width: 40%;
+        height: auto;
+    }
+    .details_container {
+        width: 80%;
+        height: auto;
+        clear: right;
+        margin-left: 15%;
+    }
+}
+
+@media screen and (min-width: 680px) and (max-width: 680px) {
+    body {
+        overflow-x: unset;
+    }
+    .myimage>h1 {
+        font-size: 40px;
+    }
+    .myimage>p {
+        font-size: 25px;
+        font-style: italic;
+        font-family: sans-serif;
+        padding: 10px 20px 0px 20px;
+        bottom: 0px;
+        float: right;
+        margin-top: 10vh;
+        margin-right: 10px;
+        border-radius: 20px 20px 0px 0px;
+        background-color: rgb(235, 235, 235);
+    }
+    .details_container {
+        position: relative;
+        width: 80vw;
+        margin-left: 5%;
+        overflow-y: unset;
+        height: auto;
+        justify-content: center;
+        align-items: center;
     }
     #navigation_bar {
         width: 90%;
@@ -441,9 +542,18 @@ h5 {
     }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 480px) {
     .myimage {
         background-size: contain;
         float: right;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .details_container {
+        width: 80%;
+        height: auto;
+        clear: right;
+        margin-left: 15%;
     }
 }

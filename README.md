@@ -7,7 +7,7 @@ This is a portfolio website of Kiptoo Rotich, listing my skils, interests and de
 ## Setup/Installation Requirements
 * Open terminal
 * Change directory to the location you want to copy the project to.
-* Clone the repo {git clone https://github.com/kiptoo-rotich/portfolio}
+* Clone the repo {git clone https://github.com/kiptoo-rotich/portfolio }
 * No, you have the project in your local machine
 ### Live Site
 View [live](https://kiptoo-rotich.github.io/portfolio/)
