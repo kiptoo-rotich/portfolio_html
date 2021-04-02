@@ -456,27 +456,32 @@ h5 {
     }
 }
 
-@media screen and (min-width: 1580px) and (max-width: 1750px) {
+@media screen and (min-width: 1500px) and (max-width: 1750px) {
     .project_container {
         width: 33%;
         height: auto;
     }
+
+    .myimage>p{
+        margin-top: 12vh;
+    }
 }
 
-@media screen and (min-width: 780px) and (max-width: 1580px) {
+@media screen and (min-width: 650px) and (max-width: 1500px) {
     .project_container {
-        width: 40%;
+        width: 31%;
         height: auto;
     }
     .details_container {
-        width: 80%;
+        width: 70%;
         height: auto;
         clear: right;
         margin-left: 15%;
+        margin-top: 9vh;
     }
 }
 
-@media screen and (min-width: 680px) and (max-width: 680px) {
+@media screen and (min-width: 480px) and (max-width: 650px) {
     body {
         overflow-x: unset;
     }
@@ -490,19 +495,20 @@ h5 {
         padding: 10px 20px 0px 20px;
         bottom: 0px;
         float: right;
-        margin-top: 10vh;
+        margin-top: 7vh;
         margin-right: 10px;
         border-radius: 20px 20px 0px 0px;
         background-color: rgb(235, 235, 235);
     }
     .details_container {
         position: relative;
-        width: 80vw;
+        width: 60vw;
         margin-left: 5%;
         overflow-y: unset;
         height: auto;
         justify-content: center;
         align-items: center;
+        margin-top: 6vh;
     }
     #navigation_bar {
         width: 90%;
@@ -525,7 +531,7 @@ h5 {
         text-align: left;
     }
     .project_container {
-        width: 80vw;
+        width: 28%;
         height: auto;
         overflow-y: unset;
     }
@@ -555,5 +561,6 @@ h5 {
         height: auto;
         clear: right;
         margin-left: 15%;
+        margin-top: 2vh;
     }
 }
