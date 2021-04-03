@@ -176,12 +176,6 @@ h3 {
     padding: 20px;
 }
 
-.project_container:hover {
-    background-color: white;
-    zoom: 105%;
-    width: 35.5%;
-}
-
 .project_container>div {
     columns: 2;
     padding: 20px;
@@ -392,23 +386,27 @@ h5 {
     width: 30px;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (min-width:480px) and (max-width: 680px) {
     body {
         overflow-x: unset;
     }
     .myimage>h1 {
         font-size: 30px;
     }
+    .myimage {
+        margin-bottom: 0vh;
+        height: 20vh;
+    }
     .details_container {
-        position: relative;
+        margin-left: 8%;
         width: 80vw;
-        margin-left: 5%;
         overflow-y: unset;
         height: auto;
+        margin-top: 1vh;
     }
     #navigation_bar {
         width: 90%;
-        background-color: rgba(25, 186, 192, 0.829);
+        background-color: rgb(25, 186, 192);
         position: fixed;
         top: 0px;
         text-decoration: none;
@@ -419,21 +417,17 @@ h5 {
         font-size: 20px;
         text-decoration: none;
     }
-    .details_container>img {
-        height: 15vh;
-        width: 48vw;
-    }
     .header {
         text-align: left;
+        margin-bottom: 0px;
     }
     .myimage>p {
         font-size: 19px;
         font-style: italic;
         font-family: sans-serif;
         padding: 10px 20px 0px 20px;
-        bottom: 0px;
         float: right;
-        margin-top: 7vh;
+        margin-top: 2vh;
         margin-right: 10px;
         border-radius: 20px 20px 0px 0px;
         background-color: rgb(235, 235, 235);
@@ -450,65 +444,83 @@ h5 {
         height: 18vh;
         width: 35vw;
     }
-    .project_container:hover {
-        background-color: white;
-        width: 81vw;
-    }
 }
 
-@media screen and (min-width: 1500px) and (max-width: 1750px) {
+@media screen and (min-width: 1450px) and (max-width: 1750px) {
     .project_container {
         width: 33%;
         height: auto;
     }
-
-    .myimage>p{
+    .myimage>p {
         margin-top: 12vh;
+    }
+    .details_container {
+        width: 25%;
+        height: auto;
+        clear: right;
+        margin-top: 9vh;
+        float: left;
     }
 }
 
-@media screen and (min-width: 650px) and (max-width: 1500px) {
+@media screen and (min-width: 1080px) and (max-width: 1450px) {
     .project_container {
-        width: 31%;
+        width: 50%;
         height: auto;
     }
     .details_container {
-        width: 70%;
+        width: 40%;
         height: auto;
-        clear: right;
-        margin-left: 15%;
+        clear: both;
         margin-top: 9vh;
-    }
-}
-
-@media screen and (min-width: 480px) and (max-width: 650px) {
-    body {
-        overflow-x: unset;
+        float: left;
     }
     .myimage>h1 {
         font-size: 40px;
     }
     .myimage>p {
-        font-size: 25px;
+        font-size: 20px;
         font-style: italic;
         font-family: sans-serif;
         padding: 10px 20px 0px 20px;
         bottom: 0px;
         float: right;
-        margin-top: 7vh;
+        margin-top: 6vh;
+        margin-right: 10px;
+        border-radius: 20px 20px 0px 0px;
+        background-color: rgb(235, 235, 235);
+    }
+}
+
+@media screen and (min-width: 680px) and (max-width: 1080px) {
+    body {
+        overflow-x: unset;
+    }
+    .myimage>h1 {
+        font-size: 35px;
+    }
+    .myimage>p {
+        font-size: 20px;
+        font-style: italic;
+        font-family: sans-serif;
+        padding: 10px 20px 0px 20px;
+        bottom: 0px;
+        float: right;
+        margin-top: 5vh;
         margin-right: 10px;
         border-radius: 20px 20px 0px 0px;
         background-color: rgb(235, 235, 235);
     }
     .details_container {
         position: relative;
-        width: 60vw;
-        margin-left: 5%;
+        width: 65vw;
+        margin-left: 10%;
         overflow-y: unset;
         height: auto;
-        justify-content: center;
-        align-items: center;
-        margin-top: 6vh;
+        margin-top: 3vh;
+    }
+    .container {
+        width: 90%;
     }
     #navigation_bar {
         width: 90%;
@@ -528,10 +540,10 @@ h5 {
         width: 48vw;
     }
     .header {
-        text-align: left;
+        float: none;
     }
     .project_container {
-        width: 28%;
+        width: 43%;
         height: auto;
         overflow-y: unset;
     }
@@ -539,12 +551,8 @@ h5 {
         font-size: 16px;
     }
     .project_container>img {
-        height: 18vh;
-        width: 35vw;
-    }
-    .project_container:hover {
-        background-color: white;
-        width: 81vw;
+        height: 10vh;
+        width: auto;
     }
 }
 
@@ -556,11 +564,83 @@ h5 {
 }
 
 @media screen and (max-width: 480px) {
+
     .details_container {
         width: 80%;
         height: auto;
         clear: right;
         margin-left: 15%;
-        margin-top: 2vh;
+    }
+    .myimage{
+        background-image: url(Image/Face1.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 80vh;
+    }
+
+    .myimage>h1 {
+        font-size: 30px;
+        padding-top: 40%;
+        color:turquoise;
+        padding-left: 10px;
+    }
+
+    .details_container {
+        margin-left: 8%;
+        width: 80vw;
+        overflow-y: unset;
+        height: auto;
+    }
+
+    .details_container>h3{
+        font-size: 18px;
+    }
+
+    .details_container>p{
+        font-size: 14px;
+    }
+
+    #navigation_bar {
+        width: 90%;
+        background-color: rgb(25, 186, 192);
+        position: fixed;
+        top: 0px;
+        text-decoration: none;
+        padding-right: 30px;
+        border-bottom: 2px solid white;
+    }
+    #navigation_bar>li>a {
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .header{
+        margin-left: 37%;
+        font-size: 24px;
+    }
+
+
+    .myimage>p {
+        font-size: 15px;
+        font-style: italic;
+        font-family: sans-serif;
+        padding: 10px 20px 0px 20px;
+        float: right;
+        margin-top: 11vh;
+        margin-right: 10px;
+        border-radius: 20px 20px 0px 0px;
+        background-color: rgb(235, 235, 235);
+    }
+    .project_container {
+        width: 80vw;
+        height: auto;
+        overflow-y: unset;
+    }
+    .project_container>p, .project_container>div>p, ul>li, ol>li {
+        font-size: 14px;
+    }
+    .project_container>img {
+        height: 18vh;
+        width: 55vw;
     }
 }
