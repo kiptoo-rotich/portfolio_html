@@ -28,7 +28,8 @@ h2 {
 .myimage {
     background-image: url(Image/Kiptoo.jpg);
     background-repeat: no-repeat;
-    height: 400px;
+    background-size: contain;
+    height: 50vh;
     width: 98%;
     background-attachment: fixed;
 }
@@ -40,7 +41,7 @@ h2 {
     padding: 10px 20px 0px 20px;
     bottom: 0px;
     float: right;
-    margin-top: 11vh;
+    margin-top: 20vh;
     margin-right: 10px;
     border-radius: 20px 20px 0px 0px;
     background-color: rgb(235, 235, 235);
@@ -78,7 +79,6 @@ a {
     color: darkblue;
     font-weight: 700;
     padding-left: 25px;
-    background-attachment: fixed;
 }
 
 #navigation_bar>li>a {
@@ -161,7 +161,7 @@ h3 {
     font-weight: 700;
     text-decoration: underline;
     margin-left: 54vw;
-    padding-top: 45vh;
+    padding-top: 5vh;
     margin-bottom: 5vh;
 }
 
@@ -392,10 +392,14 @@ h5 {
     .myimage>h1 {
         font-size: 30px;
     }
-    .myimage {
-        margin-bottom: 0vh;
-        height: 20vh;
+
+    .project_container{
+        width: 80%;
+        float: none;
+        margin: auto;
+        height: auto;
     }
+    
     .details_container {
         margin-left: 8%;
         width: 80vw;
@@ -467,7 +471,7 @@ h5 {
         height: auto;
     }
     .myimage>p {
-        margin-top: 12vh;
+        margin-top: 15vh;
     }
     .details_container {
         width: 25%;
@@ -655,12 +659,7 @@ h5 {
 
 
 @media screen and (max-width: 480px) {
-    .myimage {
-        background-image: url(Image/Face1.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        height: 80vh;
-    }
+
     .myimage>h1 {
         font-size: 30px;
         padding-top: 40%;
