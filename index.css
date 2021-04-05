@@ -41,33 +41,23 @@ h2 {
     padding: 10px 20px 0px 20px;
     bottom: 0px;
     float: right;
+<<<<<<< HEAD
     margin-top: 20vh;
+=======
+    margin-top: 22vh;
+>>>>>>> gh-pages
     margin-right: 10px;
     border-radius: 20px 20px 0px 0px;
     background-color: rgb(235, 235, 235);
 }
 
-.myimage>p:hover {
-    font-size: 28px;
-    font-style: italic;
-    font-family: sans-serif;
-    padding: 10px 20px 0px 20px;
-    bottom: 0px;
-    color: black;
-    background-color: rgb(25, 186, 192);
-    position: relative;
-    float: right;
-    margin-top: 100px;
-    margin-right: 10px;
-    border-radius: 20px 20px 0px 0px;
-}
 
 a {
     color: blue;
 }
 
 .myimage>p>a:hover {
-    color: white;
+    color: darkblue;
 }
 
 .myimage>h1 {
@@ -261,6 +251,8 @@ h3 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 80%;
+    margin: 5%;
 }
 
 .feedback-container>img {
@@ -280,10 +272,18 @@ h3 {
 .contact_container {
     padding-top: 10%;
     clear: both;
+<<<<<<< HEAD
 }
 
 .contact {
     width: 80%;
+=======
+    width: 90%;
+}
+
+.contact {
+    width: 50%;
+>>>>>>> gh-pages
     padding: 10px;
     border: 1px solid green;
     border-radius: 10px;
@@ -339,8 +339,10 @@ h3 {
 }
 
 .contact_header {
-    margin-top: 5%;
+    margin-left: 20%;
     color: black;
+    float: right;
+    margin-right: 30%;
 }
 
 .contact>textarea {
@@ -710,13 +712,21 @@ h5 {
         font-size: 40px;
         padding-top: 30%;
         padding-bottom: 30%;
+<<<<<<< HEAD
         color: white;
+=======
+        color: black;
+>>>>>>> gh-pages
     }
     .myimage {
         background-image: url(Image/Face1.png);
         background-size: contain;
         background-attachment: fixed;
         background-repeat: no-repeat;
+<<<<<<< HEAD
+=======
+        margin-left: 3%;
+>>>>>>> gh-pages
     }
     .details_container {
         margin-left: 5%;
@@ -746,12 +756,18 @@ h5 {
         font-size: 15px;
         text-decoration: none;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> gh-pages
     .header {
         margin-left: 37%;
         font-size: 23px;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> gh-pages
     .myimage>p {
         font-size: 15px;
         font-style: italic;
@@ -763,7 +779,10 @@ h5 {
         border-radius: 20px 20px 0px 0px;
         background-color: rgb(235, 235, 235);
     }
+<<<<<<< HEAD
     
+=======
+>>>>>>> gh-pages
     .project_container {
         width: 80vw;
         height: auto;
