@@ -1,5 +1,5 @@
 
-## PORFOLIO
+## PORTFOLIO
 ### Landing page of my portfolio, April 2021
 #### By Kiptoo Rotich
 ## Description

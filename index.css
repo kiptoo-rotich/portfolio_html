@@ -746,10 +746,12 @@ h5 {
         font-size: 15px;
         text-decoration: none;
     }
+
     .header {
         margin-left: 37%;
         font-size: 23px;
     }
+
     .myimage>p {
         font-size: 15px;
         font-style: italic;
@@ -761,6 +763,7 @@ h5 {
         border-radius: 20px 20px 0px 0px;
         background-color: rgb(235, 235, 235);
     }
+    
     .project_container {
         width: 80vw;
         height: auto;
