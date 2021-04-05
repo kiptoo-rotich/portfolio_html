@@ -282,6 +282,16 @@ h3 {
     clear: both;
 }
 
+.contact {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 10px;
+    font-size: 17px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px;
+}
+
 .contact>p {
     width: 90%;
     margin: 20px;
@@ -390,22 +400,50 @@ h5 {
         overflow-x: unset;
     }
     .myimage>h1 {
-        font-size: 30px;
+        font-size: 40px;
+        margin-top: 3%;
+        padding-top: 25%;
+        padding-bottom: 12%;
+        color: darkblue;
     }
-
-    .project_container{
+    .myimage {
+        background-image: url(Image/Face.jpg);
+        background-size: contain;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        margin-left: 3%;
+    }
+    .details_container {
+        margin-left: 5%;
+        width: 80vw;
+        overflow-y: unset;
+        height: auto;
+        position: relative;
+        margin-top: 0vh;
+        margin-bottom: 10%;
+    }
+    .project_container {
         width: 80%;
         float: none;
         margin: auto;
         height: auto;
     }
-    
     .details_container {
         margin-left: 8%;
         width: 80vw;
         overflow-y: unset;
         height: auto;
         margin-top: 1vh;
+    }
+    .project_container>h3 {
+        font-size: 16px;
+    }
+    .project_container>p, .project_container>div>p, ul>li, ol>li {
+        font-size: 18px;
+    }
+    .project_container>img {
+        height: 18vh;
+        width: 63vw;
     }
     #navigation_bar {
         width: 90%;
@@ -423,6 +461,8 @@ h5 {
     .header {
         text-align: left;
         margin-bottom: 0px;
+        float: left;
+        margin-left: 35%;
     }
     .myimage>p {
         font-size: 19px;
@@ -462,6 +502,14 @@ h5 {
         width: 20%;
         height: 20%;
         padding: 10px;
+    }
+    .social_images {
+        margin-left: 35%;
+        margin-bottom: 10%;
+    }
+    .social_images>a>img {
+        height: 50px;
+        width: 50px;
     }
 }
 
@@ -657,22 +705,27 @@ h5 {
     }
 }
 
-
 @media screen and (max-width: 480px) {
-
     .myimage>h1 {
-        font-size: 30px;
-        padding-top: 40%;
-        color: turquoise;
-        padding-left: 10px;
+        font-size: 40px;
+        padding-top: 30%;
+        padding-bottom: 30%;
+        color: white;
+    }
+    .myimage {
+        background-image: url(Image/Face1.png);
+        background-size: contain;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
     }
     .details_container {
-        margin-left: 8%;
+        margin-left: 5%;
         width: 80vw;
         overflow-y: unset;
         height: auto;
         position: relative;
-        margin-top: 5vh;
+        margin-top: 0vh;
+        margin-bottom: 10%;
     }
     .details_container>h3 {
         font-size: 17px;
@@ -695,15 +748,15 @@ h5 {
     }
     .header {
         margin-left: 37%;
-        font-size: 24px;
+        font-size: 23px;
     }
     .myimage>p {
         font-size: 15px;
         font-style: italic;
         font-family: sans-serif;
-        padding: 10px 20px 0px 20px;
+        padding: 5px 10px 0px 20px;
         float: right;
-        margin-top: 11vh;
+        margin-top: 1px;
         margin-right: 10px;
         border-radius: 20px 20px 0px 0px;
         background-color: rgb(235, 235, 235);
@@ -713,12 +766,15 @@ h5 {
         height: auto;
         overflow-y: unset;
     }
+    .project_container>h3 {
+        font-size: 16px;
+    }
     .project_container>p, .project_container>div>p, ul>li, ol>li {
         font-size: 14px;
     }
     .project_container>img {
         height: 18vh;
-        width: 55vw;
+        width: 60vw;
     }
     #footer>p {
         font-size: 13px;
@@ -736,15 +792,12 @@ h5 {
         background-color: white;
         box-shadow: 0px 0px 10px 0px;
     }
-
-    .contact_container>h2{
+    .contact_container>h2 {
         font-size: 20px;
     }
-
-    .contact>p{
+    .contact>p {
         width: 90%;
     }
-
     .contact>p>input {
         border: 0px;
         background-color: lightgray;
@@ -761,5 +814,13 @@ h5 {
     .feedback-container>img {
         width: 20%;
         height: 20%;
+    }
+    .social_images {
+        margin-left: 30%;
+        margin-bottom: 10%;
+    }
+    .social_images>a>img {
+        height: 40px;
+        width: 40px;
     }
 }
