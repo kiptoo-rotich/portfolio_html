@@ -11,6 +11,10 @@ h2 {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.container {
+    margin-bottom: 10%;
+}
+
 #navigation_bar {
     width: 100%;
     background-color: rgb(25, 186, 192);
@@ -24,7 +28,8 @@ h2 {
 .myimage {
     background-image: url(Image/Kiptoo.jpg);
     background-repeat: no-repeat;
-    height: 400px;
+    background-size: contain;
+    height: 50vh;
     width: 98%;
     background-attachment: fixed;
 }
@@ -36,7 +41,7 @@ h2 {
     padding: 10px 20px 0px 20px;
     bottom: 0px;
     float: right;
-    margin-top: 100px;
+    margin-top: 20vh;
     margin-right: 10px;
     border-radius: 20px 20px 0px 0px;
     background-color: rgb(235, 235, 235);
@@ -74,7 +79,6 @@ a {
     color: darkblue;
     font-weight: 700;
     padding-left: 25px;
-    background-attachment: fixed;
 }
 
 #navigation_bar>li>a {
@@ -157,7 +161,7 @@ h3 {
     font-weight: 700;
     text-decoration: underline;
     margin-left: 54vw;
-    padding-top: 45vh;
+    padding-top: 5vh;
     margin-bottom: 5vh;
 }
 
@@ -174,12 +178,6 @@ h3 {
     margin: 20px;
     margin-bottom: 10vh;
     padding: 20px;
-}
-
-.project_container:hover {
-    background-color: white;
-    zoom: 105%;
-    width: 35.5%;
 }
 
 .project_container>div {
@@ -267,19 +265,9 @@ h3 {
 
 .feedback-container>img {
     float: left;
-    height: 300px;
-    width: 300px;
-    padding: 50px;
-}
-
-.contact {
-    width: 30%;
-    padding: 10px;
-    border: 1px solid green;
-    border-radius: 10px;
-    font-size: 19px;
-    background-color: white;
-    box-shadow: 0px 0px 10px 0px;
+    height: 250px;
+    width: 250px;
+    padding: 5%;
 }
 
 .contact>p>img {
@@ -287,6 +275,21 @@ h3 {
     width: 20px;
     float: left;
     padding-top: 4px;
+}
+
+.contact_container {
+    padding-top: 10%;
+    clear: both;
+}
+
+.contact {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 10px;
+    font-size: 17px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px;
 }
 
 .contact>p {
@@ -392,16 +395,254 @@ h5 {
     width: 30px;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (min-width:480px) and (max-width: 680px) {
     body {
         overflow-x: unset;
     }
+    .myimage>h1 {
+        font-size: 40px;
+        margin-top: 3%;
+        padding-top: 25%;
+        padding-bottom: 12%;
+        color: darkblue;
+    }
+    .myimage {
+        background-image: url(Image/Face.jpg);
+        background-size: contain;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        margin-left: 3%;
+    }
     .details_container {
-        position: relative;
-        width: 80vw;
         margin-left: 5%;
+        width: 80vw;
         overflow-y: unset;
         height: auto;
+        position: relative;
+        margin-top: 0vh;
+        margin-bottom: 10%;
+    }
+    .project_container {
+        width: 80%;
+        float: none;
+        margin: auto;
+        height: auto;
+    }
+    .details_container {
+        margin-left: 8%;
+        width: 80vw;
+        overflow-y: unset;
+        height: auto;
+        margin-top: 1vh;
+    }
+    .project_container>h3 {
+        font-size: 16px;
+    }
+    .project_container>p, .project_container>div>p, ul>li, ol>li {
+        font-size: 18px;
+    }
+    .project_container>img {
+        height: 18vh;
+        width: 63vw;
+    }
+    #navigation_bar {
+        width: 90%;
+        background-color: rgb(25, 186, 192);
+        position: fixed;
+        top: 0px;
+        text-decoration: none;
+        padding-right: 30px;
+        border-bottom: 2px solid white;
+    }
+    #navigation_bar>li>a {
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .header {
+        text-align: left;
+        margin-bottom: 0px;
+        float: left;
+        margin-left: 35%;
+    }
+    .myimage>p {
+        font-size: 19px;
+        font-style: italic;
+        font-family: sans-serif;
+        padding: 10px 20px 0px 20px;
+        float: right;
+        margin-top: 2vh;
+        margin-right: 10px;
+        border-radius: 20px 20px 0px 0px;
+        background-color: rgb(235, 235, 235);
+    }
+    .contact {
+        width: 80%;
+        padding: 10px;
+        border: 1px solid green;
+        border-radius: 10px;
+        font-size: 17px;
+        background-color: white;
+        box-shadow: 0px 0px 10px 0px;
+    }
+    .contact>p>input {
+        border: 0px;
+        background-color: lightgray;
+        padding-top: 5px;
+        width: 80%;
+        margin-left: 0px;
+    }
+    .message_picture {
+        height: 10%;
+        width: 10%;
+    }
+    .feedback-container {
+        width: 100%;
+    }
+    .feedback-container>img {
+        width: 20%;
+        height: 20%;
+        padding: 10px;
+    }
+    .social_images {
+        margin-left: 35%;
+        margin-bottom: 10%;
+    }
+    .social_images>a>img {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media screen and (min-width: 1450px) and (max-width: 1750px) {
+    .project_container {
+        width: 33%;
+        height: auto;
+    }
+    .myimage>p {
+        margin-top: 15vh;
+    }
+    .details_container {
+        width: 25%;
+        height: auto;
+        clear: right;
+        margin-top: 9vh;
+        float: left;
+    }
+    .contact {
+        width: 50%;
+        padding: 10px;
+        border: 1px solid green;
+        border-radius: 10px;
+        font-size: 17px;
+        background-color: white;
+        box-shadow: 0px 0px 10px 0px;
+    }
+    .contact>p>input {
+        border: 0px;
+        background-color: lightgray;
+        padding-top: 7px;
+        width: 90%;
+        margin-left: 0px;
+    }
+    .message_picture {
+        height: 15%;
+        width: 15%;
+    }
+    .feedback-container {
+        width: 80%;
+    }
+    .feedback-container>img {
+        width: 20%;
+        height: 20%;
+    }
+    .feedback-container>img {
+        width: 230px;
+        height: 230px;
+    }
+}
+
+@media screen and (min-width: 1080px) and (max-width: 1450px) {
+    .project_container {
+        width: 50%;
+        height: auto;
+    }
+    .details_container {
+        width: 40%;
+        height: auto;
+        clear: both;
+        margin-top: 9vh;
+        float: left;
+    }
+    .myimage>h1 {
+        font-size: 40px;
+    }
+    .myimage>p {
+        font-size: 20px;
+        font-style: italic;
+        font-family: sans-serif;
+        padding: 10px 20px 0px 20px;
+        bottom: 0px;
+        float: right;
+        margin-top: 6vh;
+        margin-right: 10px;
+        border-radius: 20px 20px 0px 0px;
+        background-color: rgb(235, 235, 235);
+    }
+    .contact {
+        width: 50%;
+        padding: 10px;
+        border: 1px solid green;
+        border-radius: 10px;
+        font-size: 17px;
+        background-color: white;
+        box-shadow: 0px 0px 10px 0px;
+    }
+    .contact>p>input {
+        border: 0px;
+        background-color: lightgray;
+        padding-top: 7px;
+        width: 90%;
+        margin-left: 0px;
+    }
+    .message_picture {
+        height: 15%;
+        width: 15%;
+    }
+    .feedback-container {
+        width: 100%;
+    }
+    .feedback-container>img {
+        width: 20%;
+        height: 20%;
+    }
+}
+
+@media screen and (min-width: 680px) and (max-width: 1080px) {
+    body {
+        overflow-x: unset;
+    }
+    .myimage>h1 {
+        font-size: 35px;
+    }
+    .myimage>p {
+        font-size: 20px;
+        font-style: italic;
+        font-family: sans-serif;
+        padding: 10px 20px 0px 20px;
+        bottom: 0px;
+        float: right;
+        margin-top: 5vh;
+        margin-right: 10px;
+        border-radius: 20px 20px 0px 0px;
+        background-color: rgb(235, 235, 235);
+    }
+    .details_container {
+        position: relative;
+        width: 65vw;
+        margin-left: 10%;
+        overflow-y: unset;
+        height: auto;
+        margin-top: 3vh;
     }
     #navigation_bar {
         width: 90%;
@@ -421,10 +662,10 @@ h5 {
         width: 48vw;
     }
     .header {
-        text-align: left;
+        float: none;
     }
     .project_container {
-        width: 80vw;
+        width: 43%;
         height: auto;
         overflow-y: unset;
     }
@@ -432,18 +673,155 @@ h5 {
         font-size: 16px;
     }
     .project_container>img {
-        height: 18vh;
-        width: 35vw;
+        height: 10vh;
+        width: auto;
     }
-    .project_container:hover {
+    .contact {
+        width: 50%;
+        padding: 10px;
+        border: 1px solid green;
+        border-radius: 10px;
+        font-size: 17px;
         background-color: white;
-        width: 81vw;
+        box-shadow: 0px 0px 10px 0px;
+    }
+    .contact>p>input {
+        border: 0px;
+        background-color: lightgray;
+        padding-top: 7px;
+        width: 90%;
+        margin-left: 0px;
+    }
+    .message_picture {
+        height: 15%;
+        width: 15%;
+    }
+    .feedback-container {
+        width: 100%;
+    }
+    .feedback-container>img {
+        width: 20%;
+        height: 20%;
     }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (max-width: 480px) {
+    .myimage>h1 {
+        font-size: 40px;
+        padding-top: 30%;
+        padding-bottom: 30%;
+        color: black;
+    }
     .myimage {
+        background-image: url(Image/Face1.png);
         background-size: contain;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        margin-left: 3%;
+    }
+    .details_container {
+        margin-left: 5%;
+        width: 80vw;
+        overflow-y: unset;
+        height: auto;
+        position: relative;
+        margin-top: 0vh;
+        margin-bottom: 10%;
+    }
+    .details_container>h3 {
+        font-size: 17px;
+    }
+    .details_container>p {
+        font-size: 14px;
+    }
+    #navigation_bar {
+        width: 90%;
+        background-color: rgb(25, 186, 192);
+        position: fixed;
+        top: 0px;
+        text-decoration: none;
+        padding-right: 30px;
+        border-bottom: 2px solid white;
+    }
+    #navigation_bar>li>a {
+        font-size: 15px;
+        text-decoration: none;
+    }
+    .header {
+        margin-left: 37%;
+        font-size: 23px;
+    }
+    .myimage>p {
+        font-size: 15px;
+        font-style: italic;
+        font-family: sans-serif;
+        padding: 5px 10px 0px 20px;
         float: right;
+        margin-top: 1px;
+        margin-right: 10px;
+        border-radius: 20px 20px 0px 0px;
+        background-color: rgb(235, 235, 235);
+    }
+    .project_container {
+        width: 80vw;
+        height: auto;
+        overflow-y: unset;
+    }
+    .project_container>h3 {
+        font-size: 16px;
+    }
+    .project_container>p, .project_container>div>p, ul>li, ol>li {
+        font-size: 14px;
+    }
+    .project_container>img {
+        height: 18vh;
+        width: 60vw;
+    }
+    #footer>p {
+        font-size: 13px;
+    }
+    #footer>img {
+        height: 10px;
+        width: 10px;
+    }
+    .contact {
+        width: 90%;
+        padding: 5%;
+        border: 1px solid green;
+        border-radius: 5px;
+        font-size: 13px;
+        background-color: white;
+        box-shadow: 0px 0px 10px 0px;
+    }
+    .contact_container>h2 {
+        font-size: 20px;
+    }
+    .contact>p {
+        width: 90%;
+    }
+    .contact>p>input {
+        border: 0px;
+        background-color: lightgray;
+        padding-top: 7px;
+        width: 80%;
+    }
+    .message_picture {
+        height: 10%;
+        width: 10%;
+    }
+    .feedback-container {
+        width: 100%;
+    }
+    .feedback-container>img {
+        width: 20%;
+        height: 20%;
+    }
+    .social_images {
+        margin-left: 30%;
+        margin-bottom: 10%;
+    }
+    .social_images>a>img {
+        height: 40px;
+        width: 40px;
     }
 }
