@@ -1,5 +1,5 @@
 
-# PORFOLIO
+# PORTFOLIO
 #### Landing page of my portfolio, April 2021
 #### By Kiptoo Rotich
 ## Description
@@ -9,7 +9,7 @@ This is a portfolio website of Kiptoo Rotich, listing my skils, interests and de
 * Change directory to the location you want to copy the project to.
 * Clone the repo {git clone https://github.com/kiptoo-rotich/portfolio}
 * No, you have the project in your local machine
-### Live Site
+## Live Site
 View [live](https://softonic254.github.io/Dairy_Business/)
 ## Known Bugs
 This website has a contact page which will ask for details like email and name. The system will just popup an alert and there'll not be be any actual communication from us through email yet. We're working to resolve that.
