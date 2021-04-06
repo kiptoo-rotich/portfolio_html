@@ -47,20 +47,6 @@ h2 {
     background-color: rgb(235, 235, 235);
 }
 
-.myimage>p:hover {
-    font-size: 28px;
-    font-style: italic;
-    font-family: sans-serif;
-    padding: 10px 20px 0px 20px;
-    bottom: 0px;
-    color: black;
-    background-color: rgb(25, 186, 192);
-    position: relative;
-    float: right;
-    margin-top: 100px;
-    margin-right: 10px;
-    border-radius: 20px 20px 0px 0px;
-}
 
 a {
     color: blue;
@@ -68,6 +54,9 @@ a {
 
 .myimage>p>a:hover {
     color: white;
+    background-color: green;
+    padding: 3px 10px 3px 10px;
+    border-radius: 10px;
 }
 
 .myimage>h1 {
@@ -283,7 +272,7 @@ h3 {
 }
 
 .contact {
-    width: 80%;
+    width: 30%;
     padding: 10px;
     border: 1px solid green;
     border-radius: 10px;
